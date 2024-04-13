@@ -1,10 +1,13 @@
 import { Navigate } from "react-router-dom";
 import { useUserContext } from "../context/UserContextProvider";
+
 const Protected = ({ children }) => {
-  const isValidUser = useUserContext();
-  console.log(isValidUser);
-  if (isValidUser) return children;
-  else return <Navigate to={"/login"} />;
+  const { isValidUser } = useUserContext();
+  if (isValidUser === false) {
+    return <Navigate to={"/login"} />;
+  }
+
+  return children;
 };
 
 export default Protected;

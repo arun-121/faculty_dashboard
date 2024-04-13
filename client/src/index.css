@@ -4,7 +4,96 @@
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
+  box-sizing: border-box;
+
 }
+
+.gradient-bg {
+  /* background-color: #7fffd429; */
+  /* background: #50C9C3; */
+  /* fallback for old browsers */
+  /* background: -webkit-linear-gradient(to left, #96DEDA, #50C9C3); */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #96dedb3d, #50c9c33d);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+html,
+body,
+#root {
+  /* background-color: "rgb(238, 242, 246)"; */
+
+}
+
+
+.shadow:hover {
+  /* border: none;
+  outline: none; */
+  background: rgba(128, 128, 128, 0.352);
+}
+
+hr {
+  width: 100%;
+
+  border: solid 2px rgba(0, 0, 0, 0.37);
+}
+
+.round,
+{
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.shadow {}
+
+.onhover:hover {
+  opacity: 0.9;
+
+}
+
+.box {
+  margin-right: 20px;
+  margin-left: 20px;
+
+
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.521) 0px 30px 60px -30px, rgba(0, 1, 1, 0.753) 0px -2px 6px 0px inset;
+  border-radius: 20px;
+}
+
+@media only screen and (max-width: 300px) {
+  .box {
+    border-radius: none;
+    box-shadow: none;
+  }
+}
+
+.desktopOnly,
+.mobileOnly {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .mobileOnly {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .desktopOnly {
+    display: block;
+  }
+}
+
+/* html,
+body,
+#root {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+} */
 
 /* 
 :root {
@@ -40,7 +129,7 @@ body {
   min-height: 100vh;
 }
 
-h1 {
+h1 { 
   font-size: 3.2em;
   line-height: 1.1;
 }
